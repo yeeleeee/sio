@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+/*
+---------------
+color palette: 
+primary: #b00 #e0e0e0 #666
+secondary: #a60 #067 #247 #085 #243
+----------------
+*/
+
+
+html{
+    font-weight: 400;
+}
+body{
+    margin: 2vw;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
+}
+
+img{
+    height: 14vw;
+}
+a{
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/*----navs------*/
+nav{
+    z-index: 10;
+    background: #990707;
+}
+nav>ul{
+    padding: 0;
+    padding-right: 1vw;
+
+}
+li {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+li:last-of-type {
+    float: right;
+}
+
+li> a{
+    color: white;
+    font-size: 12px;
+}
+li> a:hover .smallbutton{ 
+    color: #990707;
+    background: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.smallbutton{
+/*    background: #a60;*/
+    border-bottom: solid 2px white;
+    padding: 1.7%;
+}
+
+/*---------------------------------*/
+.workspace{
+/*    top: 10vw;*/
+}
+
+
+/*
+---------
+.row .blank for margin
+.row (for each row of items) .menuitems
+    .menu
+---------
+*/
+
+.blank{
+    height: 20vw;
+}
+.menu{
+    border: 2px #247 solid;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #247;
+    line-height: 2em;
+    margin-bottom: 2em;
+}
+.menuitems>a{
+    text-decoration: none;
+}
+.menuitems>a:hover{
+    color: white;
+}
+.menuitems>a:hover .menu{
+    background: #247;
+    color: white;
+}
+
+/*-------------index2------------*/
+.block1{
+    height: 40vw;
+    background-color: #a60;
+}
+
+.block2{
+    height: 40vw;
+    background-color: #247;
+}
+.block3{
+    height: 40vw;
+    background-color: #085;
+}
+
+
+
+
+/*------------------------------------schedule.html-----------------------*/
+.timetable{
+}
+.time{
+    padding: .2em;
+    line-height: 4em;
+    margin-top: 1.2em;
+    font-size: 1.2rem;
+    text-align: right;
+}
+.days{
+    padding: 0;
+    margin-bottom: 2%;
+    margin-top: 0;
+}
+
+.cell{
+    display: inline-block;
+    width: 18.3%;
+/*    background: #c7d4e8;*/
+    padding:1%;
+/*    margin: 1em;*/
+}
+.day{
+    background: none;
+    border-bottom: 1px solid gold;
+}
+.class{
+/*
+    height: 10vw;
+    padding: 1.527em;
+*/
+    height: 10vw;
+}
+
+.red{
+    background: #a60;
+    
+}
+.blue{
+    background: #067;
+    height: 23vw;
+}
+
+#yellow{
+    background: #a60;
+}
+#green{
+    background: #067;
+}
+
+/*----------------------------------------addcourse1.html---------------------*/
+
+.container{
+    padding-top: 1.1em;
+}
+.title{
+    font-weight: 700;
+    color: #990707;
+    font-size: 1.5rem;
+    margin-bottom: 2em;
+}
+.text{
+    font-weight:700;
+    font-size: 2rem;
+    line-height: 2.1em;
+}
+.small{
+    font-weight: 400;
+}
+
+.field{
+    padding-top: 1em;
+    padding-bottom: 3em;
+    border-bottom: solid gray 2px;
+    display: inline-block;
+    width: 70%;
+    margin-bottom: 7em;
+}
+.button{
+    float: right;
+    display: block;
+    border: 2px solid #247;
+    font-size: 1.6rem;
+    padding: .5em;
+    margin-top: 1em;
+}
+a:hover .button{
+    background: #247;
+    color: white;
+}
+/*----------------------------------------addcourse2.html---------------------*/
+
+
+.course{
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5em;
+    background: pink;
+    margin-bottom: .5em;
+}
+.cdetail{
+    background: pink;
+    margin-bottom: .5em;
+    padding: 1em;
+}
+#add{
+    margin-top: -20px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+    body{
+       font-family: 'Open Sans', sans-serif; 
+    } 
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
