@@ -91,6 +91,11 @@ li> a:hover .smallbutton{
     line-height: 2em;
     margin-bottom: 2em;
 }
+
+.col-md-2{
+    margin-left: 1em;
+}
+
 .menuitems>a{
     text-decoration: none;
 }
